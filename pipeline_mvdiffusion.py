@@ -65,7 +65,7 @@ class MVDiffusionPipeline(StableDiffusionPipeline):
             image_encoder=image_encoder,
             requires_safety_checker=requires_safety_checker,
         )
-        self.num_views = 6
+        self.num_views = 8
 
     def load_ip_adapter(
         self,
