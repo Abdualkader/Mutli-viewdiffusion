@@ -65,7 +65,7 @@ class MVDiffusionPipeline(StableDiffusionPipeline):
             image_encoder=image_encoder,
             requires_safety_checker=requires_safety_checker,
         )
-        self.num_views = 8
+        self.num_views = 32
 
     def load_ip_adapter(
         self,
@@ -487,7 +487,7 @@ def get_camera(
     num_frames,
     elevation=15,
     azimuth_start=0,
-    azimuth_span=360,
+    azimuth_span=180,
     blender_coord=True,
     extra_view=False,
 ):
